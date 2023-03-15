@@ -1,0 +1,21 @@
+h1{
+    color: rgb(9, 73, 73);
+}
+main{
+    border: 2px solid;
+}
+nav{
+    border: 2px solid;
+}
+section{
+    display: flexbox;
+    width: 150vh;
+    height: 300vh;
+    border: 2px solid;
+}
+article{
+    border:  2px solid;
+}
+aside{
+    border: 2px solid;
+}

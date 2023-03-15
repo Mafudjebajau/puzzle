@@ -1,0 +1,47 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recebendo dados do Formulário</title>
+    <link rel="stylesheet" href="estilop.css">
+    
+</head>
+<body>
+  
+        <article>
+            <main>
+                <img id="puzzle" src="imagens/puzzlenav.png" alt="puzzle">
+                <h1>Líricas do Puzzle</h1>
+            </main>
+            <nav>
+        
+                <img src="imagens/mbjdir.png" alt="homelogo">
+                <a href="index2.html">
+                    <li>home</li>
+                </a>
+                <img src="imagens/kisspng-cape-elizabeth-thomas-memorial-library-central-l-poetry-5ae869233f21e5.8467555115251807072586.png
+                " alt="poemalogo">
+                <a href="index.html">
+                    <li>Poemas</li>
+                </a>
+                <img src="imagens/5bbe9da4de01a-506da8bf1fb19164b9558201b6bbd46a.png" alt="">
+                <a href="Sobre.html">
+                    <li>Sobre</li>
+                </a>
+            </nav>
+        </article>
+        <div class="divpri">
+        
+        <section id="frames">
+            <iframe src="iframe.html" frameborder="0"></iframe>
+            <iframe id="iframe2" src="iframe2.html" frameborder="0"></iframe>
+            <iframe id="iframe3" src="iframe3.html" frameborder="0"></iframe>
+        </section>
+    </div>
+
+</body>
+<?php
+$nome = $_POST['nome'];
+echo "Olá " . $nome;
+?>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            border-radius: 25px;
+            align-items: center;
+            justify-content: center;
+            background-size: 300%;
+            
+        }
+
+        .box::after{
+            content: '';
+            z-index: -1;
+            position: absolute;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            background-color: black;
+            background:linear-gradient(45deg, red,black,blue,yellow,purple,violet,green);
+            background-size: 300%;
+            animation: animation1 2s linear infinite;
+        }
+        .box::before{
+            content: '';
+            z-index: -1;
+            position: absolute;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            background:linear-gradient(45deg, red,black,blue,yellow,purple,violet,green);
+            background-size: 300%;
+            animation: animation1 2s linear infinite;
+
+        }
+@keyframes animation1 {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+
+    </style>
+    <div class="box">
+        <p>
+            Ola mundo
+        </p>
+    </div>
+</body>
+</html>

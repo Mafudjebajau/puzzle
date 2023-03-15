@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:abraham ;
+    src: url('fontes/PermanentMarker-Regular.ttf');
+}
+@font-face {
+    font-family: legacy;
+    src: url('fontes/OldLondon.ttf');
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    background: url('imagens/pngwing.com.png') black ;
+    background-position: right;
+    background-size: cover;
+    color: rgb(255, 254, 254);
+}
+
+h1{
+    font-family: abraham;
+    color: #868585;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin-top: 70px;
+}
+main{
+    display: inline-flex;
+}
+nav{
+    display: inline-flex;
+    position: relative;
+    background: transparent;
+    color: #ffffff;
+    padding: -10px;
+    align-items: start;
+    justify-content: start;
+    backdrop-filter: blur(5px);
+    margin-top: -10px;
+}
+ img{
+    width: 5%;
+   
+}
+img#puzzle{
+    width: 10%;
+    
+    align-items: start;
+    justify-content: start;
+    
+}
+a li{
+    text-decoration: none;
+    display: inline-flex;
+    color:rgb(255, 255, 255);
+    margin: 5px;
+    transition: all ease-in-out 2s ;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 20px ;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+}
+
+a li:hover{
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+
+    transition: all ease-in-out .1s ;
+}
+a li{
+    text-decoration: none;
+    display: inline-flex;
+    color:rgb(253, 253, 253);
+    text-shadow: 1px 1px 1px black;
+    margin: 5px;
+    transition: all ease-in-out 2s ;
+    margin-bottom: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent ;
+    box-shadow: inset 2px 2px 2px  rgb(5, 0, 110);
+    border-top: 2px solid #030442;
+    border-left: #030442;
+    margin-right: 25px;
+    background:url('imagens/pngwing.com.png') rgb(0, 0, 0) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+}
+
+a li:hover{
+    border-bottom: 1px solid rgb(81, 255, 0);
+    border-right: 2px solid rgb(30, 255, 0);
+    background:url('imagens/pngwing.com.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out .1s ;
+}
+
+
+section{
+    position: absolute;
+    display: flex;
+    justify-content: last baseline;
+    align-items: last baseline;
+    width: 100%;
+ 
+}
+div#principal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid rgb(126, 122, 122);
+    box-shadow: inset 1px 1px 1px #0a0a0a;
+    border-radius: 25px;
+    width: 400px;
+    height: 600px;
+    background:url('imagens/background001.jpg') no-repeat;
+    background-position: center ;
+    backdrop-filter: blur(5px);
+}
+
+h3{
+   
+    text-align: left;
+    margin: 0px;
+    margin-left: 40px;
+    margin-top:1px;
+    color: #c2c2c2;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 2px black;
+    
+    
+}
+h2{
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 2px 1px 1px rgb(99, 96, 96);
+    text-align: left;
+    margin-left: -50px;
+   
+}
+ 
+ 
+form#form input{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 15px;
+    height: 40px;
+    box-shadow: inset 1px 1px 1px 1px rgb(0, 0, 0);
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    outline: none;
+    color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+form#form input:hover{
+    background: transparent;
+    backdrop-filter: blur(1px);
+    color: black;
+}
+form#form input#submit{
+    margin-top: 10px;
+    width: 100%;
+    color:rgb(255, 255, 255);
+    background-color: rgb(253, 0, 0);
+    border-radius: 20px ;
+    box-shadow: inset 2px 2px 2px black;
+    border-bottom: 2px solid rgb(51, 51, 51);
+    border-right: 2px solid rgb(78, 69, 69);
+    font-size: 1em;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+form#form input#submit:hover{
+    background-color: #700000;
+    cursor: pointer;
+}
+@keyframes anime {
+    0%{
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+form img{
+    position: absolute;
+    left: 100px;
+    margin-top: -30px;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    width: 9%;
+}
+.user{
+    margin-bottom:20px ;
+}
+p{
+    color: #c2c2c2;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+p#legacy{
+    font-family: legacy;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    text-shadow: 2px 3px 3px #000000;
+}
+.secundario{
+    margin-top: 90px;
+}
+input {
+    text-align: center;
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid rgb(112, 111, 111);
+    border-right: 2px solid rgb(112, 111, 111);
+}
+img#imgpri{
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    margin-top: -110px;
+    margin-left: 200px;
+}
+form#form input#check{
+    width: 15px;
+    height: 15px;
+    text-align: left;
+    margin-left: -190px;
+}
+p#paragrafo{
+    position: absolute;
+    top: 342px;
+    left: 120px;
+    color: rgb(70, 99, 64);
+    text-shadow: 1px 1px 1px black;
+  
+}
+
+iframe{
+    width: 509px;
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    background: transparent;
+}
+iframe#iframe2{
+    width: 549px;
+    height: 600px;
+    position: absolute;
+    top: 60px;
+    left: 520px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+iframe#iframe3{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 60px;
+    left: 1080px;
+    border-radius: 20px;
+     background-color: rgba(0, 0, 0, 0.568);
+}
+div.divpri{
+    display: inline-flex;
+  
+    box-sizing: border-box;
+}
+
+section{
+    display: inline;
+}
+h1{
+    font-family: abraham;
+    color: #030442;
+    font-size: 5em;
+    text-shadow: 2px 2px 2px rgb(216, 216, 216);
+    margin-top: 10px;
+
+}
+img#puzzle{
+    width: 10%;
+    height: 10%;
+    align-items: start;
+    justify-content: start;
+    margin: 5px;
+}
+::-webkit-scrollbar{
+    scrollbar-color: red;
+}
+
+
+@media screen and (max-width:600px) {
+  
+    h1{
+     font-family: abraham;
+     color: #030442;
+     font-size: 2.5em;
+     text-shadow: 2px 2px 2px rgb(216, 216, 216);
+     margin-top: 10px;
+    
+ }
+
+ main{
+     display: inline-flex;
+     background-color: transparent;
+    
+     backdrop-filter: blur(5px);
+ }
+ nav{
+     display: inline-flex;
+     color: #ffffff;
+     padding: 10px;
+     align-items: start;
+     justify-content: start;
+     background: transparent;
+     margin-top: -10px;
+ }
+ article{
+     position: fixed ;
+     margin-left: 10px;
+     margin-right: 10px;
+     z-index: 10;
+ }
+  img{
+     width: 7%;
+     height: 5%;
+    
+ }
+ img#puzzle{
+     width: 15%;
+     height: 15%;
+     align-items: start;
+     justify-content: start;
+     
+ }
+ 
+ 
+ a li:hover{
+     border-bottom: 1px solid rgb(5, 0, 110);
+     border-right: 2px solid rgb(5, 0, 110);
+ 
+     transition: all ease-in-out .1s ;
+ }
+ 
+ 
+
+ iframe{
+     width: 359px;
+     height: 600px;
+     position: absolute;
+     top: 740px;
+     background: transparent;
+     
+ }
+ section#frames{
+     display: grid;
+     margin-top: 70px;
+ }
+ 
+ iframe#iframe2{
+     width: 440px;
+     height: 600px;
+     position: absolute;
+     top: 120px;
+     left: 5px;
+     background: transparent ;
+     backdrop-filter: blur(5px);
+     border-radius: 20px;
+     border: 2px solid white;
+ }
+ iframe#iframe3{
+     width: 149px;
+     height: 600px;
+     position: absolute;
+     top: 740px;
+     left: 305px;
+     border-radius: 20px;
+ }
+ 
+ }
+ @media screen and (max-width:500px) {
+    body{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+        background: url('imagens/pngwing.com.png') black ;
+        background-position: right;
+        background-size: cover;
+        color: rgb(255, 254, 254);
+    }
+
+ iframe{
+    width: 359px;
+    height: 600px;
+    position: absolute;
+    top: 725px;
+    background: transparent;  
+}
+section#frames{
+    display: grid;
+    margin-top: 70px;
+}
+
+iframe#iframe2{
+    width: 440px;
+    height: 600px;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    background: transparent ;
+    backdrop-filter: blur(5px);
+  
+}
+iframe#iframe3{
+    width: 149px;
+    height: 600px;
+    position: absolute;
+    top: 725px;
+    left: 305px;
+    border-radius: 20px;
+}
+ }
+  @media  screen and (min-width:700px) {
+        
+    
+iframe{
+    width: 509px;
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    background: transparent;
+}
+iframe#iframe2{
+    width: 749px;
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    left: 320px;
+    background: rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+
+
+iframe#iframe3{
+    width: 409px;
+    height: 100vh;
+    position: absolute;
+    top: -250px;
+    left: 1080px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow:  4px 4px 5px rgb(5, 140, 182), -2px -2px 0px rgb(0, 17, 20);
+}
+  }
+  ::-webkit-scrollbar{
+    color: red;
+}

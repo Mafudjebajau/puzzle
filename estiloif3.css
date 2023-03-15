@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+html{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    color: white;
+}
+.principal > p{
+    background-color: black;
+    padding: 15px;
+    border-radius: 25px;
+    color: rgb(105, 105, 105);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 1em;
+    margin: 25px;
+    box-shadow:  4px 4px 5px rgb(5, 140, 182), -2px -2px 0px rgb(0, 17, 20);
+}
+
+
+@media  screen and (max-width:150px) {
+    .principal  > p{
+        font-size: .5rem;
+        padding: 10px;
+        margin: 5px;
+        line-height: 15px;
+    }
+}
